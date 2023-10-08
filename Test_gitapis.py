@@ -7,6 +7,10 @@ class TestGit(unittest.TestCase):
         result = getCommits("Ashayp", "HelloWorld")
         self.assertEqual(result, 8)
 
+    def test_checkgitapistate(self):
+        result = getRepos("Ashayp")
+        self.assertGreater(len(result), 0)
+
     def test_getCommits(self):
         result = getCommits("ahsgdkeh", "ahsjdgs")
         self.assertNotEqual(result, 1)

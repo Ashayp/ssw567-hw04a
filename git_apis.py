@@ -22,9 +22,7 @@ def getCommits(username, repo):
 
 
 user = "Ashayp"
-# = input("Enter username: ")     
 Repos = getRepos(user) 
-print(Repos)
 print("Username: " + user)
 for i in Repos:              
     number = getCommits(user, i)
